@@ -1,0 +1,1012 @@
+/*
+Theme Name: GNOME Grass
+Theme URI: http://gnome.org/
+Author: Vinicius Depizzol <vdepizzol@gmail.com>
+Description: The original theme for the GNOME Project website.
+
+*/
+
+
+@import url("css/reset.css");
+@import url("css/text.css");
+@import url("css/960.css");
+
+/* Base information */
+/* ========================================================================== */
+
+html {
+    background: #fff url(images/html-bg.png) top repeat-x;
+}
+body {
+    
+}
+a {
+    color: #204a87;
+}
+a:hover {
+    color: #3465a4;
+}
+a:visited {
+   color: #5d396e;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hidden {
+    display: none;
+}
+
+
+
+/* Accessibility access */
+/* ========================================================================== */
+
+
+
+#accessibility_access {
+    position: absolute;
+    left: 0;
+    /* Not visible by default? */
+    top: -200px;
+}
+
+
+
+/* Global Domain Bar */
+/* ========================================================================== */
+
+
+
+#global_domain_bar {
+    background: #fff;
+    height: 10px;
+}
+#global_domain_bar div {
+    max-width: 940px;
+    margin: 0 auto;
+}
+#global_domain_bar a {
+    margin-right: 30px;
+    float: right;
+    background: #fff url(images/favicon.png) 8px 7px no-repeat;
+    padding: 4px 12px 2px 26px;
+    color: #555753;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+/* Header */
+/* ========================================================================== */
+
+
+
+#header {
+    margin: 20px auto 0;
+}
+#header img {
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+}
+#header #logo {
+   float: left;
+}
+#header #logo h1 {
+    margin: 0;
+}
+#header #logo img {
+   -webkit-transition: opacity 200ms ease-out;
+   -moz-transition: opacity 200ms ease-out;
+   transition: opacity 200ms ease-out;
+   opacity: 1;
+   margin-left: -3px;
+   height: 76px;
+   width: 199px;
+}
+#header #logo img:hover {
+   opacity: 0.85;
+}
+
+
+
+/* Top bar */
+/* ========================================================================== */
+
+
+
+#top_bar {
+    background: #2e3436 url("images/top_bar-bg.png") top repeat-x;
+    padding: 8px 0;
+    margin-top: 23px;
+    font-size: 13px;
+    line-height: normal;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+#top_bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+}
+#top_bar ul li {
+    display: inline;
+    margin: 0 5px 0 0;
+}
+#top_bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 8px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    outline: 0;
+    -webkit-transition: background 100ms linear;
+    -moz-transition: background 100ms linear;
+    transition: background 100ms linear;
+    text-shadow: 0 1px 0 #000;
+}
+#top_bar a:hover {
+    background: #64696d;
+    background: rgba(100%, 100%, 100%, 0.2);
+}
+#top_bar a:focus {
+    background: rgba(100%, 100%, 100%, 0.15);
+}
+#top_bar a:active, #top_bar li.current-menu-item a, #top_bar li.current-page-ancestor a {
+    background: #1c2021 url("images/top_bar-item-bg.png") top repeat-x;
+    -moz-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+}
+#top_bar li.selected a {
+    font-weight: bold;
+}
+#top_bar li a span.home {
+    background: url("images/top_bar-item-home.png") no-repeat;
+    padding-left: 18px;
+}
+#top_bar #main_search {
+    text-align: right;
+}
+#top_bar input {
+    margin: -8px 0 -8px -8px;
+    line-height: 22px;
+    width: 150px;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    padding: 8px 8px 8px 28px;
+    background: transparent url(images/search-icon.png) 8px center no-repeat;
+    color: #fff;
+    border-left: 1px solid rgba(100%,100%,100%,0.3);
+    outline: none;
+}
+#top_bar input.placeholder {
+    color: #CCC;
+}
+#top_bar input:focus {
+    background-color: rgba(100%,100%,100%,0.1);
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+
+/* Page Title */
+/* ========================================================================== */
+
+
+
+.page_title {
+   margin: 10px 10px 20px;
+   border-bottom: 1px solid #d3d7cf;
+}
+.page_title h1 {
+    margin: 0;
+    font-size: 37px;
+    text-shadow: 0 1px 0 #fff;
+    line-height: normal;
+    letter-spacing: -0.08em;
+}
+.page_title h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+.page_title h1 a:hover {
+    text-decoration: underline;
+}
+.page_title.with_subpages_list {
+    display: table-row;
+}
+.page_title.with_subpages_list h1 {
+    display: table-cell;
+    width: 100%;
+}
+
+/* -> subpages list */
+
+/*
+ * This is not used right now, but allows to put links by the side of
+ * the title of the page.
+ */
+ 
+.page_title .subpages_list {
+   list-style: none;
+   clear: left;
+   margin: 0;
+   padding-bottom: 4px;
+   display: table-cell;
+   text-align: right;
+   white-space: nowrap;
+   vertical-align: bottom;
+}
+.page_title .subpages_list li {
+   display: inline;
+   padding: 0;
+   margin: 0 0 0 0.5em;
+}
+.page_title .subpages_list li a {
+   color: inherit;
+   text-decoration: none;
+   padding: 3px 6px;
+}
+.page_title .subpages_list li a:hover {
+   outline: 0;
+   background: red;
+   background: #dde5ef url(images/focus-bg.png) top repeat-x;
+   border: 1px solid #bbc5d5;
+   padding: 2px 5px;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}
+.page_title .subpages_list li a:active {
+   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+   box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+.page_title .subpages_list li.current_page_item a {
+   font-weight: bold;
+}
+
+
+
+/* News Title */
+/* ========================================================================== */
+
+
+
+.news_title h1 {
+    margin-top: 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+}
+.news_title .date {
+    margin: 0;
+    color: #3465a4;
+}
+
+
+
+
+
+/* Container */
+/* ========================================================================== */
+
+
+
+#container {
+    padding-top: 20px;
+    color: #555;
+    width: 960px;
+    margin: auto;
+    min-height: 240px;
+}
+
+/*
+ * this is basically used to force specific elements not to use
+ * grid_* classes
+ */
+#container .page_title, #container .content, #container .sidebar {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#container .content, #container .page_title {
+    width: 940px;
+}
+#container.two_columns .content {
+    width: 700px;
+}
+#container.two_columns .content.without_sidebar {
+    width: 940px;
+}
+#container.two_columns .sidebar {
+    width: 220px;
+}
+
+
+
+/* Content specs */
+/* ========================================================================== */
+
+
+
+/*
+ * -> Call to Action boxes
+ *
+ *
+ */
+
+.action_box {
+   background: #fffae5 url(images/action_box-bg.png) repeat-x bottom;
+   -moz-box-shadow: 0 1px 2px #e5d693, inset 0 1px rgba(100%, 100%, 100%, 0.4);
+   -webkit-box-shadow: 0 1px 2px #e5d693, inset 0 1px rgba(100%, 100%, 100%, 0.4);
+   box-shadow: 0 1px 2px #e5d693, inset 0 1px rgba(100%, 100%, 100%, 0.4);
+   padding: 10px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #e7d172;
+}
+
+
+/*
+ * -> Subtle boxes
+ *
+ * .subtle_box can be used inside grid classes to make simple box delimiters
+ * (without grids inside of it) or as a child of container class to allow columns on it
+ *
+ * Examples:
+ *
+ * <div class="grid_3">
+ *     <div class="subtle_box">Lorem ipsum dolor sit amet</div>
+ * </div>
+ *
+ * <div class="container_12">
+ *     <div class="subtle_box">
+ *         <div class="grid_3 alpha">(...)</div>
+ *         <div class="grid_9 omega">(...)</div>
+ *     </div>
+ * </div>
+ *
+ */
+
+.subtle_box {
+    margin: 0 0 20px;
+    padding: 9px;
+    background: #fff;
+    border: 1px solid #d3d7cf;
+    border-color: rgba(0,0,0,0.15);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.subtle_box h4 {
+    margin: 0 0 10px;
+}
+
+/*
+ * --> Navigation list
+ *
+ * Navigation lists are used to generate a list of links which are in the same
+ * hierarchical level of the current page. Use it preferably in a grid_3 element.
+ *
+ * Don't forget to highlight with <li class="current_page_item"> the current page.
+ *
+ */
+
+.navigation_list {
+    background: #fff;
+    margin: 0 0 20px;
+    padding: 0;
+    border: 1px solid #d3d7cf;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    list-style: none;
+    font-size: small;
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+}
+.navigation_list > li {
+    margin: 0;
+    background: #f5f5f4;
+    border: 1px solid #fff;
+    border-bottom-color: #d3d7cf;
+}
+.navigation_list > li.current_page_item,
+.navigation_list > li a.navTreeCurrentItem {
+   background: #dde5ef url(images/focus-bg.png) top repeat-x;
+}
+.navigation_list li:first-child {
+   -moz-border-radius-topleft: 5px;
+   -moz-border-radius-topright: 5px;
+   -webkit-border-top-left-radius: 5px;
+   -webkit-border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+.navigation_list li:last-child {
+   border-bottom: 0;
+}
+.navigation_list li:last-child {
+   -moz-border-radius-bottomleft: 5px;
+   -moz-border-radius-bottomright: 5px;
+   -webkit-border-bottom-left-radius: 5px;
+   -webkit-border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+.navigation_list a {
+    padding: 6px 9px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-shadow:  white 0 1px 0;
+}
+.navigation_list a.without_icon {
+   padding-left: 37px;
+}
+.navigation_list a:hover {
+    color: #3465a4;
+    background: rgba(100%,100%,100%,0.5);
+    /*-webkit-transition: all 200ms linear;*/
+}
+.navigation_list a:focus {
+   background: #dde5ef url(images/focus-bg.png) top repeat-x;
+   outline: 0;
+   padding: 2px 5px;
+   margin: 3px;
+   border: 1px solid #bbc5d5;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}
+.navigation_list a.without_icon:focus {
+   padding-left: 33px;
+}
+.navigation_list a img {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.navigation_list > li ul {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation_list > li ul li {
+    border-top: 1px solid #ececec;
+    margin: 0;
+    padding: 0;
+}
+.navigation_list > li ul li:first-child {
+   border-top: 0;
+}
+.navigation_list > li ul li a {
+    font-weight: normal;
+    padding: 4px 9px;
+    color: #555753;
+}
+.navigation_list > li ul li.current_page_item a {
+    font-weight: bold;
+}
+.navigation_list > li ul li a:focus {
+   padding: 0 5px;
+}
+.navigation_list > li ul  {
+   padding-top: 1px;
+}
+
+/* -> Simple List */
+
+.simple_list {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+.simple_list li {
+    border: 1px solid #eeeeec;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    margin: 0;
+}
+.simple_list li a {
+    padding: 3px 8px;
+    text-decoration: none;
+    display: block;
+    color: #888a85;
+}
+
+/* -> Iconified Menu */
+
+ul.iconified_menu {
+   list-style: none;
+   margin: 0 0 20px;
+   font-size: small;
+}
+ul.iconified_menu li {
+   margin: 0 0 5px;
+}
+ul.iconified_menu li a {
+   padding: 5px;
+   display: block;
+   text-decoration: none;
+   border: 1px solid transparent;
+   overflow: hidden;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+ul.iconified_menu li a:hover, ul.iconified_menu li a:focus {
+   background: #dde5ef url(images/focus-bg.png) top repeat-x;
+   outline: 0;
+   border: 1px solid #bbc5d5;
+}
+ul.iconified_menu li a img {
+   float: left;
+   margin-right: 5px;
+}
+
+/* -> Definition Lists */
+
+dl dt {
+    font-weight: 700;
+}
+dl dt a {
+    color: inherit;
+}
+dl dt a:visited {
+    color: #ef8e4f;
+}
+
+/* -> Definition Lists with icons */
+
+/* Icons are defined as 48x48 pixels by default */
+
+dl.icon_list dt, dl.icon_list dd {
+   margin-left: 58px;
+}
+dl.icon_list dt img {
+   float: left;
+   width: 48px;
+   height: 48px;
+   margin: 0 10px 0 -58px;
+}
+
+
+/* -> Action Button */
+
+
+.action_button {
+    display: inline-block;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    background: #ececec url(images/action_button-bg.png) center repeat-x;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    color: #2e3436;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+    line-height: 1.8;
+    -webkit-transition: background-position 100ms linear;
+    -moz-transition: background-position 100ms linear;
+    transition: background-position 100ms linear;
+    -moz-box-shadow: inset 0 1px 0 #fff;
+    -webkit-box-shadow: inset 0 1px 0 #fff;
+    outline: none;
+}
+.action_button:hover {
+    background-position: top;
+    color: #000;
+}
+.action_button:visited {
+    color: inherit;
+}
+.action_button:active {
+    -moz-box-shadow: inset 0 2px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.4);
+    background-position: bottom;
+}
+
+
+
+
+/*
+ * --> News list
+ *
+ * This is initially used in the home page for displaying the news
+ *
+ */
+
+.news_list {
+
+}
+.news_list .news {
+    margin-bottom: 20px;
+}
+.news_list .news .date {
+    font-family: 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    color: #888a85;
+}
+.news_list .news a {
+    color: #555753;
+    display: block;
+    text-decoration: none;
+}
+.news_list .news a strong {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+.news_list .news a:hover strong {
+    text-decoration: underline;
+}
+
+
+
+/* Page Navigation */
+/* ========================================================================== */
+
+
+
+.page_navigation {
+    margin: 30px auto 0;
+}
+.page_navigation .prev, .page_navigation .next {
+    height: 32px;
+    line-height: 32px;
+}
+.page_navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+.page_navigation a:hover {
+    text-decoration: underline;
+}
+.page_navigation .prev a {
+    float: left;
+    background: url(images/go-previous.png) top left no-repeat;
+    padding-left: 40px;
+}
+.page_navigation .next a {
+    float: right;
+    background: url(images/go-next.png) top right no-repeat;
+    padding-right: 40px;
+}
+
+
+
+/* Footer Artwork */
+/* ========================================================================== */
+
+
+
+#footer_art {
+    background: transparent no-repeat;
+    height: 180px;
+    margin-top: 0;
+    clear: left;
+}
+#footer_art.none {
+    height: 30px;
+    margin-top: 0;
+}
+#footer_art.default {
+    background-image: url(images/footer_arts/default.png);
+}
+
+
+/* Footer Grass */
+/* ========================================================================== */
+
+#footer_grass {
+    background: url(images/grass.png) top center repeat-x;
+    height: 39px;
+    margin-top: -33px;
+}
+
+
+/* Footer */
+/* ========================================================================== */
+
+
+
+#footer {
+    clear: left;
+    /*background: #d3d7cf url(images/grass.png) top center repeat-x;*/
+    background: #d3d7cf;
+    color: #555753;
+    padding: 20px 0;
+}
+#footer div.links > div > ul > li {
+    float: left;
+    margin: 0 40px 10px 0;
+}
+#footer div.links div a, #footer div.links div strong {
+    display: block;
+    text-decoration: none;
+}
+#footer div.links div a:hover, #footer div.links div a:focus {
+    text-decoration: underline;
+}
+#footer div.language {
+    float: right;
+}
+#footer div.language a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 220px;
+    height: 110px;
+    background: url(images/footer-map.png) center center no-repeat;
+    outline: none;
+    text-decoration: none;
+}
+#footer div.language a span {
+    background: #f4f4f4;
+    background: -moz-linear-gradient(bottom, #ececec, #fff);
+    background: -webkit-linear-gradient(bottom, #ececec, #fff);
+    background: linear-gradient(bottom, #ececec, #fff);
+    padding: 4px 12px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    color: #333;
+}
+
+#footer div.language a span.loading {
+    display: none;
+}
+#footer div.language a.loading {
+    cursor: wait !important;
+}
+#footer div.language a.loading span.switch {
+    display: none;
+}
+#footer div.language a.loading span.loading {
+    display: inline-block;
+}
+#footer div.language a:hover span.switch {
+    background: #fff;
+    background: -moz-linear-gradient(bottom, #fff, #fff);
+}
+
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer ul li {
+    margin: 0;
+    padding: 0;
+}
+#footer ul.menu > li > a {
+    font-weight: bold;
+}
+#footer .links a {
+    color: inherit;
+    -webkit-transition: background-color 100ms ease-in;
+    -moz-transition: background-color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+}
+#footer .links a:focus {
+   background: #ececec;
+   padding: 1px 3px;
+   margin: -1px -3px;
+   text-decoration: none !important;
+   outline: 0;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+#footer #footnotes {
+    margin-top: 20px;
+}
+#footer #footnotes small {
+    font-size: 88%;
+}
+#footer #footnotes a {
+    color: inherit;
+}
+
+
+/* Language Selector */
+/* ========================================================================== */
+
+
+#language_selector {
+    display: none;
+    /* poor wanda the fish */
+    background: #555753 url(images/language-selector-bg.png) top center repeat-x;
+    clear: left;
+    overflow: hidden;
+}
+#language_selector .container_12 {
+    background: url(images/language-selector-wanda-bg.png) right 60px no-repeat;
+    overflow: hidden;
+}
+#language_selector h3 {
+    color: #f57900;
+    margin: 60px 0 35px;
+}
+#language_selector ul {
+    list-style: none;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+#language_selector ul li {
+    margin: 0;
+    padding: 0;
+    margin: 0 0 7px;
+}
+#language_selector ul li.active {
+    font-weight: bold;
+}
+#language_selector ul a {
+    color: #fff;
+    text-decoration: none;
+}
+#language_selector ul a:hover {
+    text-decoration: underline;
+}
+#language_selector .help_us_translating {
+    color: #d3d7cf;
+    margin: 129px 0 30px;
+}
+#language_selector .help_us_translating a {
+    color: #fff;
+}
+
+/* Separators */
+/* ========================================================================== */
+
+hr {
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+    margin: 40px 0;
+}
+
+hr.top_shadow,
+hr.bottom_shadow {
+    height: 25px;
+    background: url(images/hr-shadow.png) no-repeat bottom;
+    background-size: contain;
+    border: 0;
+}
+hr.bottom_shadow {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* Crafted Content */
+/* ========================================================================== */
+
+.crafted_content {
+    margin: 40px 0 0;
+}
+.crafted_content img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.crafted_content .section {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.crafted_content .section h2,
+.crafted_content .section h3 {
+    color: #2e3436;
+    margin-top: 0;
+}
+.crafted_content .section.image-right .text {
+    float: left;
+    width: 480px;
+}
+.crafted_content .section.image-left .text {
+    float: right;
+    width: 480px;
+}
+.crafted_content .section .image {
+    display: block;
+    width: 420px;
+}
+.crafted_content .section .image img {
+    width: 420px;
+    display: block;
+}
+.crafted_content .section.image-right .image {
+    margin-left: 40px;
+    float: right;
+}
+.crafted_content .section.image-left .image {
+    margin-right: 40px;
+    float: left;
+}
+.crafted_content .section .thumbs {
+    display: table;
+    padding: 20px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+.crafted_content .section .thumbs li {
+    display: table-cell;
+    padding: 0 20px 0 0;
+    margin: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+.crafted_content .section .thumbs li:last-child {
+    padding-right: 0;
+}
+.crafted_content .section .thumbs li > a {
+    display: block;
+    padding: 4px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+.crafted_content .section .thumbs li .inline a {
+    color: inherit;
+    text-decoration: none;
+}
+.crafted_content .section .thumbs li .inline a:hover {
+    text-decoration: underline;
+}
+.crafted_content .section .thumbs img {
+    width: 120px;
+    height: 80px;
+    display: block;
+    background: #ccc;
+}
+.crafted_content .section .thumbs a .play {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background: url(images/video-play.png) center center no-repeat;
+    margin: 4px;
+}

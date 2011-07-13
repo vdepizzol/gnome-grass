@@ -1,0 +1,112 @@
+/* News List */
+/* ========================================================================== */
+
+.news_list {
+    list-style: none;
+}
+.news_list li {
+    margin: 10px 0;
+}
+.news_list li .date {
+    font-family: 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    color: #888a85;
+    margin-top: 0.1em;
+    display: block;
+}
+.news_list li a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* Press Release */
+/* ========================================================================== */
+
+.press_list {
+    display: table;
+}
+.press_list li {
+    display: table-row;
+}
+.press_list li.year {
+    font-weight: bold;
+    font-size: 16px;
+}
+.press_list li.year:not(:first-child) span {
+    display: table-cell;
+    padding-top: 20px;
+}
+.press_list li .date {
+    font-family: 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    color: #888a85;
+    padding-top: 10px;
+    padding-right: 20px;
+    display: table-cell;
+    vertical-align: top;
+    line-height: 20px;
+    white-space: nowrap;
+}
+.press_list li a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    display: table-cell;
+    padding: 8px 0 4px;
+    vertical-align: top;
+    line-height: 20px;
+    text-decoration: none;
+}
+.press_list li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Network List */
+/* ========================================================================== */
+
+.social_network_icons {
+    overflow: hidden;
+}
+.social_network_icons ul {
+    list-style: none;
+    margin: 0 0 1px;
+    padding: 0;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+}
+.social_network_icons ul li {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: top;
+    width: 33%;
+}
+.social_network_icons ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 0 6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 11px;
+}
+.social_network_icons ul li a img {
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+}
+.social_network_icons ul li a:hover, .social_network_icons ul li a:focus {
+    background: #ececec;
+}
+.social_network_icons ul li a:active {
+    background: #ececec;
+    position: relative;
+    top: 1px;
+    -moz-box-shadow: inset 0 1px 3px #ccc;
+    -webkit-box-shadow: inset 0 1px 3px #ccc;
+    box-shadow: inset 0 1px 3px #ccc;
+}

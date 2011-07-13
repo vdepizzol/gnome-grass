@@ -1,0 +1,51 @@
+/* Home Banner */
+/* ========================================================================== */
+
+
+#home_banner {
+    /* background: url(../images/home/banner-shadow.png) bottom center no-repeat; */
+    margin: 0 auto -20px;
+    padding-bottom: 59px;
+}
+#home_banner a {
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+}
+#home_banner img {
+    background: #254b87;
+    width: 940px;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    /* -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0 -1px rgba(100%, 100%, 100%, 0.6);
+    -webkit-box-shadow: inset 0 -1px rgba(100%, 100%, 100%, 0.6);
+    box-shadow: inset 0 -1px rgba(100%, 100%, 100%, 0.6); */
+}
+
+
+/* About GNOME Box */
+/* ========================================================================== */
+
+.about_box {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #eeeeec;
+    border: 1px solid #babdb6;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.about_box h4 {
+    margin-top: 0;
+    color: #2E3436;
+}
+.about_box p:last-child {
+    margin-bottom: 0;
+}

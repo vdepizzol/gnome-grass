@@ -1,0 +1,33 @@
+These are the pending tasks specifically for the GNOME.org WordPress theme:
+
+
+Home page
+---------
+
+- The introduction area of home page needs sane text
+- The home page needs a widget displaying future events (fetching calendar
+  information from some other service, maybe?)
+- Create a link for "more news" by the end of the news list
+
+
+News
+----
+
+- Import all the old news
+- Create a proper specific page for displaying archive posts
+- Post sidebar needs content
+- Make sure there is RSS support for news
+
+
+Projects
+--------
+
+- Create a nice index of projects like the mockup in src/projects.png
+- Projects should have space for a good description, cool screenshots and
+  user ratings
+- For each project, support indexing:
+    - commits
+    - releases
+    - translations
+    - screenshots
+    - mailing list

@@ -1,0 +1,416 @@
+/* Categories List */
+/* ========================================================================== */
+
+.categories_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #d3d7cf;
+}
+.categories_list li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #d3d7cf;
+}
+.categories_list li a {
+    padding: 6px 10px 6px 30px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.categories_list li a:hover {
+    color: #000;
+}
+.categories_list li.cat-featured a {
+    background: url(../images/applications/featured-icon.png) no-repeat 6px center;
+}
+.categories_list li.current-cat {
+    background: url(../images/categories_list-arrow.png) no-repeat right center;
+}
+.categories_list li.current-cat a {
+    font-weight: bold;
+    color: #000;
+    padding-right: 30px;
+}
+
+
+/* Applications List */
+/* ========================================================================== */
+
+
+.applications_list .row {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.applications_list .item {
+    width: 340px;
+    margin-right: 20px;
+    float: left;
+}
+.applications_list .item:last-child {
+    margin-right: 0;
+}
+.applications_list .item .icon {
+    width: 64px;
+    float: left;
+}
+.applications_list .item .main {
+    margin-left: 74px;
+}
+.applications_list .item .main h3 {
+    margin: 0;
+}
+
+
+/* Features List */
+/* ========================================================================== */
+
+.applications_featured {
+}
+.applications_featured .item {
+    overflow: hidden;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d3d7cf;
+    margin-bottom: 14px;
+}
+.applications_featured .item:last-child {
+    border-bottom: 0;
+}
+.applications_featured .item:not(.no-screenshot):nth-child(even) .screenshot {
+    float: right;
+}
+.applications_featured .item:not(.no-screenshot):nth-child(even) .main {
+    float: left;
+    margin-left: 0;
+    margin-right: 30px;
+}
+.applications_featured .item .screenshot {
+    width: 335px;
+    float: left;
+}
+.applications_featured .item .screenshot img {
+    width: 335px;
+    height: auto;
+}
+.applications_featured .item .main {
+    width: 335px;
+    float: left;
+    margin-left: 30px;
+}
+.applications_featured .item .main h3 {
+    color: #2e3436;
+}
+.applications_featured .item .main h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+.applications_featured .item .main h3 a:hover span {
+    text-decoration: underline;
+}
+.applications_featured .item .main h3 a img {
+    vertical-align: middle;
+}
+
+.applications_featured .item .main.no-screenshot {
+    float: none;
+    width: auto;
+    margin: 0 40px;
+}
+.applications_featured .item .main.no-screenshot p {
+    font-size: 16px;
+}
+
+/* Project */
+/* ========================================================================== */
+
+.project {
+    
+}
+
+.project_title {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.project_title .icon {
+    width: 186px;
+    height: 186px;
+    float: left;
+}
+.project_title .main {
+    margin-left: 206px;
+}
+.project_title h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #000;
+    line-height: 1em;
+    margin-top: 0.3em;
+}
+.project_title h1 .generic_name {
+    color: #888a85;
+    font-weight: normal;
+    display: block;
+    font-size: 28px;
+}
+.project_title .main_feature {
+    font-size: 18px;
+    color: #888a85;
+}
+
+.project h2 {
+    color: #888a85;
+    font-size: 28px;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Screenshots */
+/* ========================================================================== */
+
+.project .screenshots {
+    position: relative;
+}
+.project .screenshots > div {
+    overflow: hidden;
+}
+.project .screenshots .prev,
+.project .screenshots .next {
+    position: absolute;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    margin-top: -28px;
+    background: url(../images/applications/screenshots-slider-button.png) no-repeat;
+    overflow: hidden;
+    text-indent: 40px;
+    opacity: 0;
+    -moz-transition: opacity 200ms linear;
+    -webkit-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+    outline: none;
+}
+.project .screenshots .prev {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    margin-left: -10px;
+}
+.project .screenshots .next {
+    right: 0;
+    margin-right: -10px;
+}
+.project .screenshots:hover .prev,
+.project .screenshots:hover .next {
+    opacity: 1;
+}
+.project .screenshots .prev:active,
+.project .screenshots .next:active {
+    margin-top: -27px;
+}
+.project .screenshots li.item {
+    float: left;
+    list-style: none;
+    margin: 0 35px 0 0;
+    text-align: center;
+    width: 210px;
+}
+.project .screenshots .item:last-child {
+    margin-right: 0;
+}
+.project .screenshots .item a {
+    display: block;
+}
+.project .screenshots .item span.description {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Highlights */
+/* ========================================================================== */
+
+.project .highlights {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    -o-column-gap: 30px;
+    column-gap: 30px;
+}
+.project .highlights h3 {
+    -moz-break-after: avoid-column;
+    break-after: avoid-column;
+}
+.project .highlights p {
+    overflow: hidden;
+}
+
+/* Install */
+/* ========================================================================== */
+
+.project .install .options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+.project .install .options li {
+    margin: 0;
+    display: block;
+    float: left;
+    padding: 6px 12px;
+}
+.project .install .options li.active {
+    background-color: #e7e7e4;
+    border: 1px solid #babdb6;
+    padding: 5px 11px 8px 11px;
+    border-bottom: 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+}
+.project .install .options li a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    background: url(../images/applications/install-default.png) left center no-repeat;
+    padding-left: 26px;
+    line-height: 22px;
+    min-height: 22px;
+    outline: none;
+}
+
+.project .install .options li.gnome a,
+.project .install .options li.gnomeos a {
+    background-image: url(../images/applications/install-gnome.png);
+}
+.project .install .options li.fedora a {
+    background-image: url(../images/applications/install-fedora.png);
+}
+.project .install .options li.ubuntu a {
+    background-image: url(../images/applications/install-ubuntu.png);
+}
+.project .install .options li.opensuse a {
+    background-image: url(../images/applications/install-opensuse.png);
+}
+.project .install .options li.windows a {
+    background-image: url(../images/applications/install-windows.png);
+}
+.project .install .options li.macosx a,
+.project .install .options li.macos a {
+    background-image: url(../images/applications/install-macosx.png);
+}
+
+.project .install .explanation {
+    background: #e7e7e4;
+    border: 1px solid #babdb6;
+    padding: 20px;
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    margin-top: -1px;
+}
+.project .install .explanation > div {
+    display: none;
+}
+.project .install .explanation > div.active {
+    display: block;
+}
+.project .install .explanation > div.active > p:first-child {
+    margin-top: 0;
+}
+.project .install .explanation > div.active > p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Download button */
+/* ========================================================================== */
+
+.download_button:before {
+    content: url(../images/applications/download_button-icon.png);
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -18px;
+}
+.download_button {
+    display: inline-block;
+    background: #62b711;
+    background: -moz-linear-gradient(top, #62b711, #4e9a06);
+    background: -webkit-linear-gradient(top, #62b711, #4e9a06);
+    background: linear-gradient(top, #62b711, #4e9a06);
+    padding: 2px 12px 2px 28px;
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    text-decoration: none;
+    border: 1px solid #326204;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: inset 0 1px 0 #8ae234;
+    -webkit-box-shadow: inset 0 1px 0 #8ae234;
+    box-shadow: inset 0 1px 0 #8ae234;
+    outline: none;
+}
+.download_button:hover,
+.download_button:focus {
+    color: #fff;
+    background: #70d213;
+    background: -moz-linear-gradient(top, #70d213, #5cb607);
+    background: -webkit-linear-gradient(top, #70d213, #5cb607);
+    background: linear-gradient(top, #70d213, #5cb607);
+}
+.download_button:active {
+    background: #70d213;
+    background: -moz-linear-gradient(bottom, #70d213, #5cb607);
+    background: -webkit-linear-gradient(bottom, #70d213, #5cb607);
+    background: linear-gradient(bottom, #70d213, #5cb607);
+    position: relative;
+    top: 1px;
+}
+
+
+/* Quick Links */
+/* ========================================================================== */
+
+.project .quick_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+}
+.project .quick_links li {
+    padding: 0;
+    margin: 0 0 6px;
+}
+.project .quick_links li a {
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #fff;
+    background: #fff;
+}
+.project .quick_links li a:hover {
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #f4f4f4;
+    background: -moz-linear-gradient(top, #fff, #f4f4f4);
+    background: -webkit-linear-gradient(top, #fff, #f4f4f4);
+    background: linear-gradient(top, #fff, #f4f4f4);
+}

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-29 04:09-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:26
+#, php-format
+msgid ""
+"For now, you may want to go to the <a href=\"%1$s\">home page</a> to start "
+"from beginning or try your luck in the search form bellow."
+msgstr ""
+
+#: 404.php:38
+#, php-format
+msgid ""
+"If you think there is a bug in some link around GNOME website, please, we "
+"ask you to <a href=\"%1$s\">report a bug</a>. Thank you."
+msgstr ""
+
+#: news.php:20 page-news.php:22
+msgid "News"
+msgstr ""
+
+#: page-news.php:50
+msgid "Newer posts"
+msgstr ""
+
+#: page-news.php:51
+msgid "Older posts"
+msgstr ""
+
+#: search.php:28
+msgid "Previous page"
+msgstr ""
+
+#: search.php:29
+msgid "Next page"
+msgstr ""
+
+#: search.php:63
+#, php-format
+msgid ""
+"If you feel lost, you may want to search for %1$s in all GNOME websites on "
+"%2$s."
+msgstr ""
+
+#: 404.php:16
+msgid "Ooooops. Something is not here."
+msgstr ""
+
+#: 404.php:18
+msgid "The page you tried to access was not found."
+msgstr ""
+
+#: footer.php:16
+msgid "This website is available in many languages"
+msgstr ""
+
+#: footer.php:17
+msgid "Switch Language"
+msgstr ""
+
+#: footer.php:23
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:23
+msgid "The GNOME Project"
+msgstr ""
+
+#: footer.php:24
+msgid "Optimised for standards"
+msgstr ""
+
+#: footer.php:24
+msgid "Hosted by"
+msgstr ""
+
+#: header.php:23
+msgid "Go to page content"
+msgstr ""
+
+#: header.php:24
+msgid "Go to main menu"
+msgstr ""
+
+#: header.php:25
+msgid "Go to the search field"
+msgstr ""
+
+#: header.php:40
+msgid "Go to home page"
+msgstr ""
+
+#: header.php:40
+msgid "GNOME: The Free Software Desktop Project"
+msgstr ""
+
+#: header.php:57
+msgid "Search"
+msgstr ""
+
+#: news_sidebar.php:2
+msgid "Read the archives..."
+msgstr ""
+
+#: news_sidebar.php:6
+msgid "Connect with GNOME"
+msgstr ""
+
+#: search.php:15
+msgid "Looking for"
+msgstr ""
+
+#: search.php:50
+msgid "Sorry, but nothing was found."
+msgstr ""
+
+#: search.php:52
+msgid "Suggestions:"
+msgstr ""
+
+#: search.php:55
+msgid "Make sure all words are spelled correctly."
+msgstr ""
+
+#: search.php:56
+msgid "Try different keywords."
+msgstr ""
+
+#: search.php:57
+msgid "Try fewer keywords."
+msgstr ""
