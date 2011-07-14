@@ -44,7 +44,7 @@ require_once("header.php"); ?>
                     
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     get_query_var('page');
-                    query_posts(array('post_type' => 'projects', 'meta_key' => 'is_featured', 'posts_per_page' => 3, 'paged' => $paged));
+                    query_posts(array('post_type' => 'projects', 'meta_key' => 'is_featured', 'posts_per_page' => 10, 'paged' => $paged));
                     
                     ?>
                     
