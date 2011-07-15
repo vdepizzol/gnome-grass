@@ -220,6 +220,7 @@ require_once("header.php"); ?>
                                 $i = 0;
                                 foreach ($subitems as $subitem) {
                                     if(array_key_exists('title', $subitem) && array_key_exists('content', $subitem)) {
+                                    
                                         $class = str_replace(' ', '', strtolower(strip_tags($subitem['title'])));
                                         
                                         if ($i == 0) {

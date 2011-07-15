@@ -297,6 +297,9 @@
 .project .install .options li.fedora a {
     background-image: url(../images/applications/install-fedora.png);
 }
+.project .install .options li.debian a {
+    background-image: url(../images/applications/install-debian.png);
+}
 .project .install .options li.ubuntu a {
     background-image: url(../images/applications/install-ubuntu.png);
 }
